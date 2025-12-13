@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1762445421 source:c:\users\hp\onedrive\desktop\form registration c++\form registration\main.cpp
+	<iostream>
+	<fstream>
+	<string.h>
+
