@@ -36,10 +36,12 @@ int main()
         break;
     case 4:
         cout<<"\t\t\t Thank you for using our service "<<endl;
+        cin.clear();
+        fflush(stdin);
+        return 0;
     default:
-        system("cls");
-        cout<<"Choose from the options given above "<<endl;
-        main();
+    cout<<"Please choose from the options given"<<endl;
+    main();
     }
     return 0;
 }
@@ -64,6 +66,8 @@ void login(){
     input.close();
     if(count1=1){
         cout<<userId<<" Your login is successful "<<endl;
+
+        main();
     }else {
         cout<<"LOGIN ERROR ! Please check your username and password "<<endl;
         main();
@@ -76,12 +80,13 @@ void registration(){
     cout<<"\t\t\t USERNAME : ";
     cin>>ruserId;
     cout<<"\t\t\t PASSWORD : ";
-    cin>>rId;
+    cin>>rpassword;
 
      ofstream bills("records.txt ", ios::app);
      bills<<rId<<" "<<rpass;
      system("cls");
      cout<<"Registration successful !"<<endl;
+
      main();
 }
 void forgot(){
